@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <assert.h>
 
 int main() {
     int f;
-    scanf("%d", &f);
-    assert(f <= 1000000);
-    if(f >= 13) {
-        f = f + 1;
-    } else {
-        f = f;
+    if (scanf("%d", &f) != 1) {
+        return 0;
     }
-    printf("%d", f);
+
+    if (f >= 13) {
+        f = f + 1;
+    }
+
+    printf("%d\n", f);
+    return 0;
 }
