@@ -1,7 +1,7 @@
 #include <stdio.h>
+int a, b[1000000];
 
 int main() {
-    int a, b[1000000];
     int count = 0;
 
     scanf("%d", &a);
